@@ -1,5 +1,7 @@
-﻿import React from 'react';
+﻿'use client';
+
+import SignInForm from '../../../components/auth/SignInForm';
 
 export default function SignInPage() {
-  return <div>Sign-in placeholder</div>;
+  return <SignInForm />;
 }

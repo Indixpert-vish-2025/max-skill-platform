@@ -1,7 +1,7 @@
 ﻿export const routes = {
   home: '/',
-  login: '/signin',
+  signin: '/signin',
+  studentDashboard: '/student/dashboard',
+  instructorDashboard: '/dashboard',
   courses: '/courses',
-  studentDashboard: '/(dashboard)',
-  instructorDashboard: '/(dashboard)',
 };

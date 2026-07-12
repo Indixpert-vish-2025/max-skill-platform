@@ -1,0 +1,77 @@
+{
+  "discountBanner": {
+    "title": "Join Now and Get Discount Voucher Up To 20%",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+  },
+  "courseStats": [
+    {
+      "id": "completed",
+      "label": "Completed Courses",
+      "value": "1.500",
+      "variant": "completed",
+      "icon": "bi-check-square-fill"
+    },
+    {
+      "id": "in-progress",
+      "label": "In Progress Courses",
+      "value": "903",
+      "variant": "in-progress",
+      "icon": "bi-lightbulb-fill"
+    },
+    {
+      "id": "upcoming",
+      "label": "Upcoming Courses",
+      "value": "1.112",
+      "variant": "upcoming",
+      "icon": "bi-bookmark-fill"
+    }
+  ],
+  "learningActivity": {
+    "lastWeek": [28, 35, 42, 38, 45, 40, 36],
+    "thisWeek": [32, 40, 48, 35, 50, 44, 38],
+    "days": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    "tooltip": { "day": "Wed", "value": "35.00", "delta": "-25%" }
+  },
+  "progress": {
+    "value": 75,
+    "title": "My Progress",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+  },
+  "scoreActivity": {
+    "lastMonth": [40, 55, 48, 62, 50, 58, 45, 52, 60, 48, 55, 42],
+    "thisMonth": [52, 60, 55, 70, 65, 72, 58, 68, 75, 62, 70, 55],
+    "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "tooltip": { "month": "May", "value": "1.702" }
+  },
+  "homework": [
+    { "title": "Web Design", "progress": 8, "total": 10, "variant": "yellow" },
+    { "title": "Graphic Design", "progress": 4, "total": 10, "variant": "green" }
+  ],
+  "schedule": {
+    "title": "Upcoming Schedule",
+    "date": "Thursday, 10th April , 2021",
+    "items": [
+      {
+        "title": "Web Design",
+        "date": "January 5, 2021",
+        "time": "09.00 - 10.00 AM",
+        "instructor": "Ms. Samantha William",
+        "accent": "navy"
+      },
+      {
+        "title": "Interaction Design",
+        "date": "January 17, 2021",
+        "time": "09.00 - 10.00 AM",
+        "instructor": "Mr. Tony Soap",
+        "accent": "green"
+      },
+      {
+        "title": "Basic Programming",
+        "date": "January 17, 2021",
+        "time": "09.00 - 10.00 AM",
+        "instructor": "Ms. Samantha William",
+        "accent": "yellow"
+      }
+    ]
+  }
+}

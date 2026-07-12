@@ -1,8 +1,236 @@
 [
   {
-    "id": "c1",
-    "title": "Intro to Programming",
-    "instructorId": "u2",
-    "studentsEnrolled": 120
+    "id": 1,
+    "title": "Fullstack Developer",
+    "instructor": "Samantha William",
+    "price": "$49.00",
+    "oldPrice": "$99.00",
+    "discount": "50%",
+    "rating": 5,
+    "students": "10k",
+    "lessons": 110,
+    "duration": "18h 30m",
+    "image": "/assets/fullstack.jpg",
+    "category": "Graphic Design",
+    "featured": true,
+    "youtubeId": "zJSY8tbf_ys",
+    "description": "Learn Full Stack Web Development using HTML, CSS, JavaScript, React, Next.js, Node.js and MongoDB with real-world projects.",
+    "learnPoints": [
+      "HTML & CSS",
+      "JavaScript",
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "MongoDB"
+    ],
+    "reviews": [
+      {
+        "name": "Karen Hope",
+        "rating": 5,
+        "time": "1 Month Ago",
+        "comment": "Excellent course with practical examples."
+      },
+      {
+        "name": "Tony Soap",
+        "rating": 5,
+        "time": "2 Weeks Ago",
+        "comment": "Very easy to understand."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "UI Design Beginner",
+    "instructor": "Johnny Arnold",
+    "price": "$45.00",
+    "oldPrice": "$90.00",
+    "discount": "50%",
+    "rating": 5,
+    "students": "8k",
+    "lessons": 95,
+    "duration": "16h",
+    "image": "/assets/ui-design.jpg",
+    "category": "Programming",
+    "featured": true,
+    "youtubeId": "Ke90Tje7VS0",
+    "description": "Master UI Design using Figma from beginner to advanced level.",
+    "learnPoints": [
+      "Figma",
+      "Wireframe",
+      "Prototype",
+      "Auto Layout",
+      "Components",
+      "Design System"
+    ],
+    "reviews": [
+      {
+        "name": "Emily",
+        "rating": 5,
+        "time": "3 Weeks Ago",
+        "comment": "Best UI course."
+      },
+      {
+        "name": "David",
+        "rating": 5,
+        "time": "1 Week Ago",
+        "comment": "Loved every lesson."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "How to be Freelancer",
+    "instructor": "Jordan Nico",
+    "price": "$39.00",
+    "oldPrice": "$79.00",
+    "discount": "50%",
+    "rating": 5,
+    "students": "6k",
+    "lessons": 80,
+    "duration": "14h",
+    "image": "/assets/freelancer.jpg",
+    "category": "Soft Skill",
+    "featured": true,
+    "youtubeId": "Q33KBiDriJY",
+    "description": "Become a successful freelancer and get international clients.",
+    "learnPoints": [
+      "Portfolio",
+      "Fiverr",
+      "Upwork",
+      "Client Meeting",
+      "Pricing",
+      "Communication"
+    ],
+    "reviews": [
+      {
+        "name": "Chris",
+        "rating": 5,
+        "time": "2 Weeks Ago",
+        "comment": "Very useful."
+      },
+      {
+        "name": "Robert",
+        "rating": 5,
+        "time": "5 Days Ago",
+        "comment": "Highly recommended."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "UX Research",
+    "instructor": "Cathryn Heller",
+    "price": "$42.00",
+    "oldPrice": "$84.00",
+    "discount": "50%",
+    "rating": 5,
+    "students": "5k",
+    "lessons": 70,
+    "duration": "12h",
+    "image": "/assets/ui-design.jpg",
+    "category": "Science",
+    "featured": false,
+    "youtubeId": "3Y4cL7t4KQY",
+    "description": "Learn UX Research techniques with real case studies.",
+    "learnPoints": [
+      "User Interview",
+      "Persona",
+      "Journey Map",
+      "Research",
+      "Usability Test",
+      "UX Report"
+    ],
+    "reviews": [
+      {
+        "name": "Anna",
+        "rating": 5,
+        "time": "1 Month Ago",
+        "comment": "Amazing UX course."
+      },
+      {
+        "name": "John",
+        "rating": 5,
+        "time": "2 Days Ago",
+        "comment": "Very practical."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Basic Web Design",
+    "instructor": "Johnny Arnold",
+    "price": "$35.00",
+    "oldPrice": "$70.00",
+    "discount": "50%",
+    "rating": 5,
+    "students": "9k",
+    "lessons": 90,
+    "duration": "15h",
+    "image": "/assets/web-design.jpg",
+    "category": "Web Design",
+    "featured": false,
+    "youtubeId": "UB1O30fR-EE",
+    "description": "Build beautiful responsive websites using HTML, CSS and Bootstrap.",
+    "learnPoints": [
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Responsive",
+      "Flexbox",
+      "Grid"
+    ],
+    "reviews": [
+      {
+        "name": "Steve",
+        "rating": 5,
+        "time": "3 Days Ago",
+        "comment": "Excellent for beginners."
+      },
+      {
+        "name": "Mark",
+        "rating": 5,
+        "time": "1 Week Ago",
+        "comment": "Very clear explanation."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "3D Character Design",
+    "instructor": "Jordan Nico",
+    "price": "$55.00",
+    "oldPrice": "$110.00",
+    "discount": "50%",
+    "rating": 5,
+    "students": "4k",
+    "lessons": 75,
+    "duration": "13h",
+    "image": "/assets/character.jpg",
+    "category": "3D Design",
+    "featured": false,
+    "youtubeId": "nIoXOplUvAw",
+    "description": "Create professional 3D characters using Blender from scratch.",
+    "learnPoints": [
+      "Blender",
+      "Modeling",
+      "Sculpting",
+      "Texturing",
+      "Lighting",
+      "Rendering"
+    ],
+    "reviews": [
+      {
+        "name": "Sophia",
+        "rating": 5,
+        "time": "2 Weeks Ago",
+        "comment": "Fantastic Blender course."
+      },
+      {
+        "name": "Daniel",
+        "rating": 5,
+        "time": "4 Days Ago",
+        "comment": "Loved the projects."
+      }
+    ]
   }
 ]

@@ -1,7 +1,22 @@
 ﻿@import "./theme.scss";
+@import "./dashboard.scss";
+@import "./student-dashboard.scss";
+@import "./auth.scss";
+@import "./courses.scss";
+@import "./course-details";
+@import "./course-learning";
+@import "./student-schedule";
+@import "./student-cart";
+@import "./student-wishlist";
+@import "./student-checkout";
+@import "./student-instructors";
+@import "./student-Activity";
 
-html, body {
+html,
+body {
   font-family: $font-stack;
   margin: 0;
   padding: 0;
+  max-width: 100%;
+  overflow-x: clip;
 }

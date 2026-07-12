@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Samantha William",
+    "image": "/assets/instructors/instructor1.jpg",
+    "rating": 5.0,
+    "reviews": "1k",
+    "skills": ["Design", "Tech", "Research"],
+    "achievement": 100,
+    "certificate": 50
+  },
+  {
+    "id": 2,
+    "name": "Nadila Adja",
+    "image": "/assets/instructors/instructor2.jpg",
+    "rating": 5.0,
+    "reviews": "1k",
+    "skills": ["Design", "Tech", "Research"],
+    "achievement": 100,
+    "certificate": 50
+  },
+  {
+    "id": 3,
+    "name": "Johnny Ahmad",
+    "image": "/assets/instructors/instructor3.jpg",
+    "rating": 5.0,
+    "reviews": "1k",
+    "skills": ["Design", "Tech", "Research"],
+    "achievement": 100,
+    "certificate": 50
+  },
+  {
+    "id": 4,
+    "name": "Angelina Crispy",
+    "image": "/assets/instructors/instructor4.jpg",
+    "rating": 5.0,
+    "reviews": "1k",
+    "skills": ["Design", "Tech", "Research"],
+    "achievement": 100,
+    "certificate": 50
+  },
+  {
+    "id": 5,
+    "name": "Tony Soap",
+    "image": "/assets/instructors/instructor5.jpg",
+    "rating": 5.0,
+    "reviews": "1k",
+    "skills": ["Design", "Tech", "Research"],
+    "achievement": 100,
+    "certificate": 50
+  },
+  {
+    "id": 6,
+    "name": "Jordan Nico",
+    "image": "/assets/instructors/instructor6.jpg",
+    "rating": 5.0,
+    "reviews": "1k",
+    "skills": ["Design", "Tech", "Research"],
+    "achievement": 100,
+    "certificate": 50
+  }
+]

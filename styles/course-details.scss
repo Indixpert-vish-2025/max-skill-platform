@@ -1,0 +1,384 @@
+
+.course-details-page{
+    padding:40px;
+}
+
+.course-info{
+
+    .back-btn{
+        color:$text-primary;
+        font-weight:600;
+        margin-bottom:24px;
+    }
+
+    h2{
+        font-size:40px;
+        font-weight:700;
+        color:$text-primary;
+        margin-bottom:16px;
+    }
+
+    .course-description{
+        color:$text-muted;
+        line-height:1.8;
+        margin-bottom:24px;
+    }
+
+    .course-meta{
+        display:flex;
+        align-items:center;
+        gap:24px;
+        margin-bottom:24px;
+
+        span{
+            color:$text-muted;
+            font-size:14px;
+        }
+
+        i{
+            color:#FDBA12;
+            margin-left:4px;
+        }
+    }
+
+    .instructor{
+        display:flex;
+        align-items:center;
+        gap:14px;
+        margin-bottom:32px;
+
+        .avatar{
+            width:52px;
+            height:52px;
+            border-radius:50%;
+            background:#ECECEC;
+        }
+
+        span{
+            font-weight:600;
+        }
+    }
+}
+
+.course-preview-card{
+    border-radius:20px;
+    overflow:hidden;
+
+    .preview-image{
+        position:relative;
+        height:300px;
+        overflow:hidden;
+        background:#ECECEC;
+
+        .preview-img{
+            object-fit:cover;
+        }
+    }
+
+    .play-button{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+
+        width:70px;
+        height:70px;
+
+        border:none;
+        border-radius:50%;
+        background:#fff;
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        cursor:pointer;
+        z-index:100;
+        transition:.3s;
+
+        &:hover{
+            transform:translate(-50%,-50%) scale(1.08);
+        }
+
+        i{
+            font-size:34px;
+            color:$accent-green;
+        }
+    }
+
+    .video-wrapper{
+
+        iframe{
+            width:100%;
+            height:300px;
+            border:none;
+            display:block;
+        }
+
+    }
+}
+.price-wrapper{
+
+    margin-top:24px;
+
+    h2{
+        margin:0;
+        font-size:46px;
+        font-weight:700;
+        color:$text-primary;
+    }
+
+    .price-meta{
+
+        display:flex;
+        align-items:center;
+        gap:16px;
+        flex-wrap:wrap;
+        margin-top:12px;
+
+    }
+
+    .old-price{
+
+        color:$text-muted;
+        text-decoration:line-through;
+        font-size:16px;
+
+    }
+
+    .discount{
+
+        color:#FF6D6D;
+        border:1px solid #FF6D6D;
+        border-radius:20px;
+        padding:4px 10px;
+        font-size:13px;
+        font-weight:600;
+
+    }
+
+    .wishlist-btn{
+
+        margin-left:auto;
+        padding:0 !important;
+        color:$text-muted !important;
+        text-decoration:none !important;
+
+        i{
+            color:#ff5b5b;
+        }
+
+    }
+
+}
+
+.price-card{
+
+    border-radius:20px;
+
+    .card-body{
+        padding:28px;
+    }
+
+    .price-top{
+
+        display:flex;
+        align-items:center;
+        gap:14px;
+        margin-bottom:24px;
+
+        h2{
+            margin:0;
+            color:$text-primary;
+            font-weight:700;
+        }
+
+        del{
+            color:$text-muted;
+        }
+
+        .discount{
+
+            color:#FF6D6D;
+            border:1px solid #FF6D6D;
+            padding:4px 10px;
+            border-radius:20px;
+            font-size:13px;
+
+        }
+
+    }
+
+}   
+
+
+.learn-list{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+
+}
+
+.learn-item{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    i{
+        color:$accent-green;
+    }
+
+    span{
+        font-size:14px;
+        color:$text-primary;
+    }
+
+}
+
+.review-list{
+
+    margin-top:35px;
+
+}
+
+.review-card{
+
+    display:flex;
+    gap:18px;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.review-avatar{
+
+    width:60px;
+    height:60px;
+
+    border-radius:50%;
+
+    background:#ECECEC;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    i{
+        font-size:26px;
+        color:#777;
+    }
+
+}
+
+.review-content{
+
+    flex:1;
+
+    h6{
+        margin-bottom:8px;
+        font-weight:700;
+    }
+
+    p{
+
+        color:$text-muted;
+        margin-top:10px;
+        line-height:1.7;
+
+    }
+
+}
+
+.review-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.review-rating{
+
+    display:flex;
+    gap:5px;
+
+}
+
+
+@media(max-width:992px){
+
+    .course-details-page{
+
+        padding:20px;
+
+    }
+
+    .learn-list{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+.course-tabs{
+
+    margin-top:40px;
+
+    .tab-buttons{
+
+        display:flex;
+        align-items:center;
+        gap:40px;
+
+        border-bottom:1px solid #ECECEC;
+
+        margin-bottom:30px;
+
+        button{
+
+            background:none;
+            border:none;
+            padding:0 0 15px;
+            font-size:18px;
+            font-weight:600;
+            color:$text-muted;
+            position:relative;
+            cursor:pointer;
+            transition:.3s;
+
+            &:hover{
+                color:$accent-green;
+            }
+
+            &.active{
+
+                color:$accent-green;
+
+                &::after{
+
+                    content:"";
+                    position:absolute;
+                    left:0;
+                    bottom:-1px;
+                    width:100%;
+                    height:3px;
+                    background:$accent-green;
+                    border-radius:10px;
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+}
+

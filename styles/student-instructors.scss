@@ -1,0 +1,395 @@
+@import './theme.scss';
+
+.instructor-card{
+
+position:relative;
+
+background:#fff;
+
+padding:26px;
+
+border-radius:20px;
+
+box-shadow:0 8px 24px rgba(0,0,0,.05);
+
+text-align:center;
+
+transition:.3s;
+
+}
+
+.instructor-card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.more-btn{
+
+position:absolute;
+
+top:18px;
+
+right:18px;
+
+background:none;
+
+border:none;
+
+font-size:18px;
+
+color:#888;
+
+}
+
+.instructor-image{
+
+width:82px;
+
+height:82px;
+
+margin:0 auto 18px;
+
+border-radius:18px;
+
+overflow:hidden;
+
+background:#f5f5f5;
+
+}
+
+.instructor-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+.instructor-card h4{
+
+font-size:20px;
+
+font-weight:700;
+
+margin-bottom:12px;
+
+color:#2f3b52;
+
+}
+
+.rating-row{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:6px;
+
+margin-bottom:16px;
+
+}
+
+.rating-row span{
+
+font-weight:600;
+
+}
+
+.rating-row i{
+
+color:#FDBA12;
+
+}
+
+.rating-row small{
+
+color:#8b8b8b;
+
+}
+
+.skill-tags{
+
+display:flex;
+
+justify-content:center;
+
+gap:8px;
+
+flex-wrap:wrap;
+
+margin-bottom:20px;
+
+}
+
+.skill-tag{
+
+padding:5px 12px;
+
+background:#f5f5f5;
+
+border-radius:8px;
+
+font-size:13px;
+
+}
+
+.view-class-btn{
+
+width:100%;
+
+margin-top:22px;
+
+height:46px;
+
+border:none;
+
+border-radius:10px;
+
+background:#4cbc9a;
+
+font-weight:600;
+
+}
+
+.view-class-btn:hover{
+
+background:#3aa886;
+
+}
+
+.instructor-stats{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:14px;
+
+margin-top:20px;
+
+}
+
+.stats-box{
+
+background:#fafafa;
+
+padding:18px 14px;
+
+border-radius:14px;
+
+text-align:left;
+
+}
+
+.stats-header{
+
+display:flex;
+
+align-items:center;
+
+gap:8px;
+
+margin-bottom:10px;
+
+}
+
+.stats-header i{
+
+font-size:18px;
+
+color:#ff8b5d;
+
+}
+
+.stats-header span{
+
+font-size:14px;
+
+font-weight:500;
+
+color:#8a8a8a;
+
+}
+
+.stats-box h3{
+
+margin:0;
+
+font-size:34px;
+
+font-weight:700;
+
+color:#2f3b52;
+
+}
+
+.custom-pagination{
+
+display:flex;
+
+justify-content:flex-end;
+
+align-items:center;
+
+gap:10px;
+
+margin-top:35px;
+
+}
+
+.custom-pagination button{
+
+width:38px;
+
+height:38px;
+
+border:none;
+
+border-radius:10px;
+
+background:#f5f5f5;
+
+color:#666;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.custom-pagination button:hover{
+
+background:#4cbc9a;
+
+color:#fff;
+
+}
+
+.custom-pagination .active{
+
+background:#4cbc9a;
+
+color:#fff;
+
+}
+
+/* ===========================
+   Student Instructors Page
+=========================== */
+
+.student-instructors {
+  padding: 30px;
+}
+
+.page-header {
+  margin-bottom: 30px;
+
+  h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #2f3b52;
+    margin-bottom: 6px;
+  }
+
+  p {
+    margin: 0;
+    color: #8d97a7;
+    font-size: 15px;
+  }
+}
+
+.instructors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  margin-bottom: 35px;
+}
+
+.instructor-card {
+  min-height: 520px;
+}
+
+.instructor-card:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.instructor-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructor-image img {
+  border-radius: 18px;
+}
+
+.rating-row {
+  font-size: 14px;
+}
+
+.rating-row small {
+  font-size: 13px;
+}
+
+.skill-tag {
+  font-size: 12px;
+}
+
+.stats-box h3 {
+  font-size: 40px;
+}
+
+.view-class-btn {
+  margin-top: 24px;
+  background: #4cbc9a !important;
+  border: none !important;
+}
+
+.view-class-btn:hover {
+  background: #3ca987 !important;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.pagination-text {
+  color: #9aa4b2;
+  font-size: 14px;
+}
+
+.custom-pagination {
+  margin-top: 0;
+}
+
+/* ===========================
+      Responsive
+=========================== */
+
+@media (max-width: 1200px) {
+
+  .instructors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .student-instructors {
+    padding: 20px;
+  }
+
+  .instructors-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

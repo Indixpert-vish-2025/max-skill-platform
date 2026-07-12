@@ -1,0 +1,69 @@
+@import './theme.scss';
+
+.auth-layout {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: $page-bg;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 460px;
+  background: $surface;
+  border-radius: $card-radius;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+
+  &__header {
+    margin-bottom: 24px;
+
+    h1 {
+      margin: 0 0 8px;
+      font-family: $font-poppins;
+      font-size: 2rem;
+      font-weight: 700;
+      color: $text-primary;
+    }
+
+    p {
+      margin: 0;
+      font-family: $font-poppins;
+      color: $text-muted;
+    }
+  }
+
+  .form-label {
+    font-family: $font-poppins;
+    font-weight: 500;
+    color: $text-primary;
+  }
+
+  .form-control {
+    min-height: 48px;
+    border-radius: 12px;
+    border-color: rgba($border-light, 0.9);
+    font-family: $font-poppins;
+
+    &:focus {
+      border-color: $accent-green;
+      box-shadow: 0 0 0 0.2rem rgba($accent-green, 0.15);
+    }
+  }
+}
+
+.auth-submit-btn {
+  min-height: 48px;
+  border: none;
+  border-radius: 12px;
+  background: $accent-green;
+  font-family: $font-poppins;
+  font-weight: 600;
+
+  &:hover,
+  &:focus {
+    background: #3aa883;
+  }
+}

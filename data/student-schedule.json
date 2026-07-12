@@ -1,0 +1,59 @@
+{
+  "ongoingClasses": [
+    {
+      "id": 1,
+      "label": "UI Design Basic",
+      "value": "75%",
+      "variant": "success",
+      "icon": "palette"
+    },
+    {
+      "id": 2,
+      "label": "Fullstack Developer",
+      "value": "50%",
+      "variant": "warning",
+      "icon": "code"
+    }
+  ],
+
+  "calendar": {
+    "month": "January",
+    "year": 2022,
+    "activeDay": 17,
+    "markedDay": 11
+  },
+
+  "progress": {
+    "value": 15,
+    "title": "+15%",
+    "description": "Your Progress this Month"
+  },
+
+  "schedule": {
+    "title": "Upcoming Schedule",
+    "date": "January 5, 2022",
+    "items": [
+      {
+        "title": "UX Research",
+        "date": "January 5",
+        "time": "07:00 - 08:00 AM",
+        "instructor": "Mr. Samantha William",
+        "accent": "green"
+      },
+      {
+        "title": "Back-End Developer",
+        "date": "January 5",
+        "time": "07:00 - 08:00 AM",
+        "instructor": "Mr. Samantha William",
+        "accent": "yellow"
+      },
+      {
+        "title": "Icon Design",
+        "date": "January 5",
+        "time": "07:00 - 08:00 AM",
+        "instructor": "Mr. Samantha William",
+        "accent": "red"
+      }
+    ]
+  }
+}
