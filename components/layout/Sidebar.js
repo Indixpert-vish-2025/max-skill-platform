@@ -91,7 +91,7 @@ const studentNavItems = [
   { href: '/student/dashboard', label: 'Dashboard', icon: 'bi-grid-1x2-fill' },
   { href: '/student/courses', label: 'Courses', icon: 'bi-book' },
   { href: '/student/schedule', label: 'Schedule', icon: 'bi-calendar3' },
-  { href: '/student/instructors', label: 'Instructors', icon: 'bi-person-badge' },
+  { href: '/instructors', label: 'Instructors', icon: 'bi-person-badge' },
   { href: '/student/profile', label: 'Profile', icon: 'bi-person' },
   { href: '/student/activity', label: 'Activity', icon: 'bi-activity' },
 ];

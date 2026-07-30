@@ -29,3 +29,86 @@ $font-poppins: var(--font-poppins), "Poppins", sans-serif;
 $font-cairo: var(--font-cairo), "Cairo", sans-serif;
 $font-inter: var(--font-inter), "Inter", sans-serif;
 $font-stack: $font-poppins;
+
+
+
+
+/* ===========================
+   Global Theme
+=========================== */
+
+:root {
+  --bs-primary: #{$primary};
+}
+
+/* Bootstrap Primary Buttons */
+.btn-primary,
+.auth-submit-btn {
+  background-color: $primary !important;
+  border-color: $primary !important;
+  color: #fff !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.auth-submit-btn:hover,
+.auth-submit-btn:focus,
+.auth-submit-btn:active {
+  background-color: darken($primary, 8%) !important;
+  border-color: darken($primary, 8%) !important;
+  color: #fff !important;
+}
+
+/* Outline Buttons */
+.btn-outline-primary {
+  color: $primary !important;
+  border-color: $primary !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: $primary !important;
+  border-color: $primary !important;
+  color: #fff !important;
+}
+
+/* Links */
+a,
+.text-primary {
+  color: $primary !important;
+}
+
+a:hover {
+  color: darken($primary, 8%) !important;
+}
+
+/* Form Controls */
+.form-check-input:checked {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: rgba($primary, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba($primary, 0.2);
+}
+
+/* Pagination */
+.page-item.active .page-link {
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.page-link {
+  color: $primary;
+}
+
+/* Dropdown */
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+  background-color: $primary !important;
+  color: #fff !important;
+}

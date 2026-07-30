@@ -1,0 +1,40 @@
+{         
+  "name": "Nella Vita",
+  "memberSince": "Member Since 2020",
+  "image": "/assets/profile/profile.png",
+
+  "points": 2300,
+  "certificate": 50,
+
+  "completedCourses": 100,
+  "inProgressCourses": 34,
+
+  "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+  "achievements": [
+  "/assets/icons/trophy.svg",
+  "/assets/icons/puzzle.svg",
+  "/assets/icons/rocket.svg",
+  "/assets/icons/brain.svg",
+  "/assets/icons/coffee.svg"
+],
+
+  "currentCourses": [
+    {
+      "id": 1,
+      "title": "UI Design Beginner",
+      "progress": 80,
+      "completed": 90,
+      "total": 110,
+      "color": "#4cbc9a"
+    },
+    {
+      "id": 2,
+      "title": "UX Research",
+      "progress": 62,
+      "completed": 50,
+      "total": 80,
+      "color": "#FDBA12"
+    }
+  ]
+}

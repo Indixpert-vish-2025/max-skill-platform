@@ -9,6 +9,19 @@ import { ToastContainer } from "react-toastify";
 import { Poppins, Cairo, Inter } from "next/font/google";
 import Providers from "./Providers";
 
+export const metadata = {
+  title: {
+    default: "MaxSkills",
+    template: "%s | MaxSkills",
+  },
+  description: "MaxSkills - Online Learning Platform",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+};
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -36,18 +49,18 @@ export default function RootLayout({ children }) {
       <body>
         <Providers>
           {children}
-
-          <ToastContainer
-            position="top-right"
-            autoClose={2500}
-            hideProgressBar={false}
-            newestOnTop
-            closeOnClick
-            pauseOnHover
-            draggable
-            theme="colored"
-          />
         </Providers>
+
+        <ToastContainer
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          pauseOnHover
+          draggable
+          theme="colored"
+        />
       </body>
     </html>
   );

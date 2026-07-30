@@ -1,5 +1,5 @@
 'use client';
-
+import Link from 'next/link';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -75,6 +75,12 @@ export default function SignInForm() {
         <Button type="submit" className="auth-submit-btn w-100" disabled={isSubmitting}>
           {isSubmitting ? 'Signing in...' : 'Sign In'}
         </Button>
+        <div className="text-center mt-3">
+  <span className="text-muted">Don't have an account? </span>
+  <Link href="/signup" className="text-primary text-decoration-none fw-semibold">
+    Create Account
+  </Link>
+</div>
       </Form>
     </div>
   );

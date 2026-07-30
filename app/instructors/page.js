@@ -1,9 +1,9 @@
 "use client";
 
-import instructors from "../../../data/instructors.json";
+import instructors from "../../data/instructors.json";
 
-import InstructorCard from "../../../components/ui/student/instructors/InstructorCard";
-import Pagination from "../../../components/ui/student/instructors/Pagination";
+import InstructorCard from "../../components/ui/student/instructors/InstructorCard";
+import Pagination from "../../components/ui/student/instructors/Pagination";
 
 export default function StudentInstructorsPage() {
   return (

@@ -1,12 +1,13 @@
 ﻿"use client";
 
-import { Form } from "react-bootstrap";
+import { Form, Dropdown } from "react-bootstrap";
 import { useAuth } from "../../hooks/useAuth";
 import { usePathname, useRouter } from "next/navigation";
 import { useSelector } from "react-redux";
+import Link from "next/link";
 
 export default function Header({ toggleSidebar }) {
-  const { logout } = useAuth();
+  const { user, logout } = useAuth();
 
   const pathname = usePathname();
   const router = useRouter();
@@ -38,7 +39,7 @@ export default function Header({ toggleSidebar }) {
     "/student/dashboard": "Dashboard",
     "/student/courses": "Courses",
     "/student/schedule": "Schedule",
-    "/student/instructors": "Instructors",
+    "/instructors": "Instructors",
     "/student/profile": "Profile",
     "/student/activity": "Activity",
 
@@ -50,7 +51,6 @@ export default function Header({ toggleSidebar }) {
 
   return (
     <header className="dashboard-header">
-
       {/* Mobile Menu */}
       <button
         type="button"
@@ -68,14 +68,12 @@ export default function Header({ toggleSidebar }) {
         <div className="search-wrap">
           <i className="bi bi-search search-icon"></i>
 
-          <Form.Control
-            placeholder="Search here..."
-          />
+          <Form.Control placeholder="Search here..." />
         </div>
       </Form>
 
       <div className="header-actions">
-
+        {/* Language */}
         <div className="header-lang">
           <span>Eng (US)</span>
           <i className="bi bi-chevron-down"></i>
@@ -84,9 +82,7 @@ export default function Header({ toggleSidebar }) {
         {/* Wishlist */}
         <button
           className="header-icon-btn badge-btn"
-          onClick={() =>
-            router.push("/student/wishlist")
-          }
+          onClick={() => router.push("/student/wishlist")}
         >
           <i className="bi bi-heart"></i>
 
@@ -100,9 +96,7 @@ export default function Header({ toggleSidebar }) {
         {/* Cart */}
         <button
           className="header-icon-btn badge-btn"
-          onClick={() =>
-            router.push("/student/cart")
-          }
+          onClick={() => router.push("/student/cart")}
         >
           <i className="bi bi-cart3"></i>
 
@@ -113,14 +107,47 @@ export default function Header({ toggleSidebar }) {
           )}
         </button>
 
-        {/* Profile */}
-        <button
-          type="button"
-          className="header-avatar"
-          onClick={logout}
-        >
-          <i className="bi bi-person-fill text-secondary"></i>
-        </button>
+        {/* Profile Dropdown */}
+        <Dropdown align="end">
+          <Dropdown.Toggle
+            variant="light"
+            className="border-0 bg-transparent shadow-none p-0"
+          >
+            <div className="header-avatar">
+              <i className="bi bi-person-fill text-secondary fs-5"></i>
+            </div>
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Header>
+              <strong>{user?.name || "User"}</strong>
+              <br />
+              <small>{user?.email}</small>
+              <br />
+              <small className="text-capitalize">
+                {user?.role}
+              </small>
+            </Dropdown.Header>
+
+            <Dropdown.Divider />
+
+            <Dropdown.Item
+              as={Link}
+              href="/student/profile"
+            >
+              <i className="bi bi-person me-2"></i>
+              My Profile
+            </Dropdown.Item>
+
+            <Dropdown.Item
+              onClick={logout}
+              className="text-danger"
+            >
+              <i className="bi bi-box-arrow-right me-2"></i>
+              Logout
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
 
         {/* Settings */}
         <button
@@ -129,9 +156,7 @@ export default function Header({ toggleSidebar }) {
         >
           <i className="bi bi-gear"></i>
         </button>
-
       </div>
-
     </header>
   );
 }
