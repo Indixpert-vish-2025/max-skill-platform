@@ -23,16 +23,25 @@
     font-family:$font-poppins;
 }
 
-.view-all-btn{
-    border:none;
-    background:transparent;
-    color:$accent-green;
-    font-weight:600;
-    font-size:15px;
+.view-class-btn {
+  width: 100%;
+  background: #4cbc9a;
+  color: #fff !important;
+  border: none;
+  height: 46px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding-top: 10px;
+}
 
-    i{
-        margin-left:6px;
-    }
+.view-class-btn:hover {
+  background: #3ba989;
+  color: #fff !important;
 }
 
 .popular-category-list{

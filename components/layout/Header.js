@@ -1,4 +1,5 @@
 ﻿"use client";
+import { useState } from "react";
 
 import { Form, Dropdown } from "react-bootstrap";
 import { useAuth } from "../../hooks/useAuth";
@@ -48,6 +49,15 @@ export default function Header({ toggleSidebar }) {
   };
 
   const pageTitle = pageTitles[pathname] || "Dashboard";
+  const [search, setSearch] = useState("");
+
+const handleSearch = (e) => {
+  e.preventDefault();
+
+  if (!search.trim()) return;
+
+  router.push(`/search?query=${encodeURIComponent(search.trim())}`);
+};
 
   return (
     <header className="dashboard-header">
@@ -64,13 +74,18 @@ export default function Header({ toggleSidebar }) {
       <h1 className="page-title">{pageTitle}</h1>
 
       {/* Search */}
-      <Form className="search-input">
-        <div className="search-wrap">
-          <i className="bi bi-search search-icon"></i>
+      <Form className="search-input" onSubmit={handleSearch}>
+  <div className="search-wrap">
+    <i className="bi bi-search search-icon"></i>
 
-          <Form.Control placeholder="Search here..." />
-        </div>
-      </Form>
+    <Form.Control
+      type="text"
+      placeholder="Search here..."
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+    />
+  </div>
+</Form>
 
       <div className="header-actions">
         {/* Language */}

@@ -3,60 +3,250 @@
     "id": 1,
     "name": "Samantha William",
     "image": "/assets/instructors/instructor1.jpg",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": "1k",
     "skills": ["Design", "Tech", "Research"],
     "achievement": 100,
-    "certificate": 50
+    "certificate": 50,
+    "designation": "Senior UI/UX Designer",
+    "experience": "8 Years",
+    "students": "12.5k",
+    "courses": 18,
+    "email": "samantha@maxskills.com",
+    "phone": "+91 9876543210",
+    "bio": "Passionate UI/UX mentor with 8+ years of teaching experience. Specialized in Figma, UX Research and Design Systems.",
+    "schedule": [
+      {
+        "day": "Monday",
+        "time": "10:00 AM - 12:00 PM"
+      },
+      {
+        "day": "Wednesday",
+        "time": "02:00 PM - 04:00 PM"
+      },
+      {
+        "day": "Friday",
+        "time": "06:00 PM - 08:00 PM"
+      }
+    ],
+    "coursesList": [
+      {
+        "title": "UI Design Beginner",
+        "students": "5.2k"
+      },
+      {
+        "title": "UX Research",
+        "students": "4.1k"
+      },
+      {
+        "title": "Design System",
+        "students": "2.7k"
+      }
+    ]
   },
   {
     "id": 2,
     "name": "Nadila Adja",
     "image": "/assets/instructors/instructor2.jpg",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": "1k",
     "skills": ["Design", "Tech", "Research"],
     "achievement": 100,
-    "certificate": 50
+    "certificate": 50,
+    "designation": "Frontend Developer",
+    "experience": "6 Years",
+    "students": "9.4k",
+    "courses": 14,
+    "email": "nadila@maxskills.com",
+    "phone": "+91 9876543211",
+    "bio": "Expert in HTML, CSS, JavaScript and React. Loves teaching beginners.",
+    "schedule": [
+      {
+        "day": "Tuesday",
+        "time": "11:00 AM - 01:00 PM"
+      },
+      {
+        "day": "Thursday",
+        "time": "03:00 PM - 05:00 PM"
+      },
+      {
+        "day": "Saturday",
+        "time": "09:00 AM - 11:00 AM"
+      }
+    ],
+    "coursesList": [
+      {
+        "title": "React Basics",
+        "students": "4.8k"
+      },
+      {
+        "title": "JavaScript ES6",
+        "students": "3.6k"
+      },
+      {
+        "title": "Responsive Design",
+        "students": "2.1k"
+      }
+    ]
   },
   {
     "id": 3,
     "name": "Johnny Ahmad",
     "image": "/assets/instructors/instructor3.jpg",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": "1k",
     "skills": ["Design", "Tech", "Research"],
     "achievement": 100,
-    "certificate": 50
+    "certificate": 50,
+    "designation": "Full Stack Developer",
+    "experience": "10 Years",
+    "students": "18k",
+    "courses": 24,
+    "email": "johnny@maxskills.com",
+    "phone": "+91 9876543212",
+    "bio": "Full Stack mentor specializing in React, Next.js, Node.js and MongoDB.",
+    "schedule": [
+      {
+        "day": "Monday",
+        "time": "05:00 PM - 07:00 PM"
+      },
+      {
+        "day": "Thursday",
+        "time": "06:00 PM - 08:00 PM"
+      },
+      {
+        "day": "Sunday",
+        "time": "10:00 AM - 12:00 PM"
+      }
+    ],
+    "coursesList": [
+      {
+        "title": "Full Stack Bootcamp",
+        "students": "8.3k"
+      },
+      {
+        "title": "Next.js Masterclass",
+        "students": "6.2k"
+      },
+      {
+        "title": "Node.js API",
+        "students": "3.8k"
+      }
+    ]
   },
   {
     "id": 4,
     "name": "Angelina Crispy",
     "image": "/assets/instructors/instructor4.jpg",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": "1k",
     "skills": ["Design", "Tech", "Research"],
     "achievement": 100,
-    "certificate": 50
+    "certificate": 50,
+    "designation": "Graphic Designer",
+    "experience": "7 Years",
+    "students": "8.7k",
+    "courses": 12,
+    "email": "angelina@maxskills.com",
+    "phone": "+91 9876543213",
+    "bio": "Creative graphic designer and branding specialist.",
+    "schedule": [
+      {
+        "day": "Tuesday",
+        "time": "01:00 PM - 03:00 PM"
+      },
+      {
+        "day": "Friday",
+        "time": "04:00 PM - 06:00 PM"
+      }
+    ],
+    "coursesList": [
+      {
+        "title": "Graphic Design",
+        "students": "4k"
+      },
+      {
+        "title": "Adobe Illustrator",
+        "students": "3.2k"
+      }
+    ]
   },
   {
     "id": 5,
     "name": "Tony Soap",
     "image": "/assets/instructors/instructor5.jpg",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": "1k",
     "skills": ["Design", "Tech", "Research"],
     "achievement": 100,
-    "certificate": 50
+    "certificate": 50,
+    "designation": "Python Developer",
+    "experience": "9 Years",
+    "students": "13k",
+    "courses": 20,
+    "email": "tony@maxskills.com",
+    "phone": "+91 9876543214",
+    "bio": "Python mentor focused on Django, Flask and automation.",
+    "schedule": [
+      {
+        "day": "Monday",
+        "time": "09:00 AM - 11:00 AM"
+      },
+      {
+        "day": "Saturday",
+        "time": "05:00 PM - 07:00 PM"
+      }
+    ],
+    "coursesList": [
+      {
+        "title": "Python Basics",
+        "students": "6.5k"
+      },
+      {
+        "title": "Django Framework",
+        "students": "4.2k"
+      },
+      {
+        "title": "Automation",
+        "students": "2.9k"
+      }
+    ]
   },
   {
     "id": 6,
     "name": "Jordan Nico",
     "image": "/assets/instructors/instructor6.jpg",
-    "rating": 5.0,
+    "rating": 5,
     "reviews": "1k",
     "skills": ["Design", "Tech", "Research"],
     "achievement": 100,
-    "certificate": 50
+    "certificate": 50,
+    "designation": "3D Artist",
+    "experience": "5 Years",
+    "students": "7.9k",
+    "courses": 11,
+    "email": "jordan@maxskills.com",
+    "phone": "+91 9876543215",
+    "bio": "Professional Blender artist teaching 3D modeling and animation.",
+    "schedule": [
+      {
+        "day": "Wednesday",
+        "time": "10:00 AM - 12:00 PM"
+      },
+      {
+        "day": "Friday",
+        "time": "03:00 PM - 05:00 PM"
+      }
+    ],
+    "coursesList": [
+      {
+        "title": "Blender Basics",
+        "students": "4.5k"
+      },
+      {
+        "title": "3D Character Design",
+        "students": "3.1k"
+      }
+    ]
   }
 ]

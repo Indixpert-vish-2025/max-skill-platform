@@ -1,12 +1,57 @@
-import React from 'react';
-import StatCard from '../../../components/ui/StatCard';
-import CalendarCard from '../../../components/ui/CalendarCard';
-import UpcomingEventsCard from '../../../components/ui/UpcomingEventsCard';
-import ActivityCard from '../../../components/ui/ActivityCard';
-import dashboardData from '../../../data/dashboard.json';
+// import React from 'react';
+// import StatCard from '../../../components/ui/StatCard';
+// import CalendarCard from '../../../components/ui/CalendarCard';
+// import UpcomingEventsCard from '../../../components/ui/UpcomingEventsCard';
+// import ActivityCard from '../../../components/ui/ActivityCard';
+// import dashboardData from '../../../data/dashboard.json';
+
+// export default function DashboardPage() {
+//   const { stats, upcomingEvents } = dashboardData;
+
+//   return (
+//     <div className="dashboard-grid">
+//       <div className="dashboard-grid-main">
+//         <div className="stats-row">
+//           {stats.map((stat) => (
+//             <StatCard
+//               key={stat.id}
+//               title={stat.title}
+//               value={stat.value}
+//               delta={stat.delta}
+//               variant={stat.variant}
+//             />
+//           ))}
+//         </div>
+
+//         <ActivityCard title="Working Activity" activeMonth="Jul" />
+//       </div>
+
+//       <aside className="events-panel">
+//         <CalendarCard month="January" year={2022} activeDay={5} markedDay={7} />
+//         <hr className="calendar-divider" />
+//         <UpcomingEventsCard events={upcomingEvents} title="Upcoming Events" />
+//       </aside>
+//     </div>
+//   );
+// }
+
+
+
+
+import React from "react";
+import StatCard from "../../../components/ui/StatCard";
+import CalendarCard from "../../../components/ui/CalendarCard";
+import UpcomingEventsCard from "../../../components/ui/UpcomingEventsCard";
+import ActivityCard from "../../../components/ui/ActivityCard";
+import dashboardData from "../../../data/dashboard.json";
 
 export default function DashboardPage() {
-  const { stats, upcomingEvents } = dashboardData;
+  const {
+    stats,
+    activity,
+    calendar,
+    upcomingEvents,
+  } = dashboardData;
 
   return (
     <div className="dashboard-grid">
@@ -19,17 +64,32 @@ export default function DashboardPage() {
               value={stat.value}
               delta={stat.delta}
               variant={stat.variant}
+              chart={stat.chart}
             />
           ))}
         </div>
 
-        <ActivityCard title="Working Activity" activeMonth="Jul" />
+        <ActivityCard
+          title={activity.title}
+          bars={activity.bars}
+          activeMonth={activity.activeMonth}
+        />
       </div>
 
       <aside className="events-panel">
-        <CalendarCard month="January" year={2022} activeDay={5} markedDay={7} />
+        <CalendarCard
+          month={calendar.month}
+          year={calendar.year}
+          activeDay={calendar.activeDay}
+          markedDay={calendar.markedDay}
+        />
+
         <hr className="calendar-divider" />
-        <UpcomingEventsCard events={upcomingEvents} title="Upcoming Events" />
+
+        <UpcomingEventsCard
+          events={upcomingEvents}
+          title="Upcoming Events"
+        />
       </aside>
     </div>
   );

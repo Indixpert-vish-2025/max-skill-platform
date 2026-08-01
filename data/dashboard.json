@@ -3,32 +3,84 @@
     {
       "id": "stat-1",
       "title": "Total Students",
-      "value": "12.345",
+      "value": "12,345",
       "delta": "5.4% than last year",
-      "variant": "students"
+      "variant": "students",
+      "chart": [45, 62, 38, 70, 55, 80, 65]
     },
     {
       "id": "stat-2",
       "title": "Courses",
       "value": "100",
       "delta": "+15% than last year",
-      "variant": "courses"
+      "variant": "courses",
+      "chart": [30, 48, 55, 40, 72, 60, 68]
     },
     {
       "id": "stat-3",
       "title": "Earnings",
       "value": "$45,741",
       "delta": "+15% than last year",
-      "variant": "earnings"
+      "variant": "earnings",
+      "chart": [35, 50, 42, 58, 48, 62, 54]
     }
   ],
+
+  "activity": {
+    "title": "Working Activity",
+    "activeMonth": "Jul",
+    "bars": [332, 290, 275, 298, 215, 209, 265, 275, 298, 215, 209, 265]
+  },
+
+  "calendar": {
+    "month": "January",
+    "year": 2022,
+    "activeDay": 5,
+    "markedDay": 7
+  },
+
   "upcomingEvents": [
-    { "date": "5 Jan", "time": "08.00 AM", "title": "UI Design", "subtitle": "Introduction Wireframe" },
-    { "date": "5 Jan", "time": "10.00 AM", "title": "Graphic Design", "subtitle": "Golden Ratio" },
-    { "date": "5 Jan", "time": "01.00 PM", "title": "Web Design", "subtitle": "Basic HTML" },
-    { "date": "5 Jan", "time": "08.00 AM", "title": "UI Design", "subtitle": "Prototyping" },
-    { "date": "5 Jan", "time": "11.00 AM", "title": "Graphic Design", "subtitle": "Photo Manipulation" },
-    { "date": "5 Jan", "time": "02.00 PM", "title": "UI Design", "subtitle": "Interaction Design" },
-    { "date": "5 Jan", "time": "04.00 PM", "title": "Programming", "subtitle": "Basic React.js" }
+    {
+      "date": "5 Jan",
+      "time": "08.00 AM",
+      "title": "UI Design",
+      "subtitle": "Introduction Wireframe"
+    },
+    {
+      "date": "5 Jan",
+      "time": "10.00 AM",
+      "title": "Graphic Design",
+      "subtitle": "Golden Ratio"
+    },
+    {
+      "date": "5 Jan",
+      "time": "01.00 PM",
+      "title": "Web Design",
+      "subtitle": "Basic HTML"
+    },
+    {
+      "date": "5 Jan",
+      "time": "08.00 AM",
+      "title": "UI Design",
+      "subtitle": "Prototyping"
+    },
+    {
+      "date": "5 Jan",
+      "time": "11.00 AM",
+      "title": "Graphic Design",
+      "subtitle": "Photo Manipulation"
+    },
+    {
+      "date": "5 Jan",
+      "time": "02.00 PM",
+      "title": "UI Design",
+      "subtitle": "Interaction Design"
+    },
+    {
+      "date": "5 Jan",
+      "time": "04.00 PM",
+      "title": "Programming",
+      "subtitle": "Basic React.js"
+    }
   ]
 }

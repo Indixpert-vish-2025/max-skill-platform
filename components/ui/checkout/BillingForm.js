@@ -1,19 +1,21 @@
 "use client";
 
 import { Form } from "react-bootstrap";
+import { useAuth } from "../../../hooks/useAuth";
 
 export default function BillingForm() {
+  const { user } = useAuth();
+
   return (
     <div className="billing-card">
-
       <h4>Billing Details</h4>
 
       <div className="checkout-grid">
-
         <Form.Group>
           <Form.Label>Full Name</Form.Label>
           <Form.Control
             type="text"
+            defaultValue={user?.name || ""}
             placeholder="Enter your full name"
           />
         </Form.Group>
@@ -22,6 +24,7 @@ export default function BillingForm() {
           <Form.Label>Email</Form.Label>
           <Form.Control
             type="email"
+            defaultValue={user?.email || ""}
             placeholder="Enter your email"
           />
         </Form.Group>
@@ -36,10 +39,8 @@ export default function BillingForm() {
 
         <Form.Group>
           <Form.Label>Country</Form.Label>
-          <Form.Select>
-
+          <Form.Select defaultValue="India">
             <option>India</option>
-
           </Form.Select>
         </Form.Group>
 
@@ -66,11 +67,9 @@ export default function BillingForm() {
             placeholder="Zip Code"
           />
         </Form.Group>
-
       </div>
 
       <Form.Group className="mt-4">
-
         <Form.Label>Address</Form.Label>
 
         <Form.Control
@@ -78,9 +77,7 @@ export default function BillingForm() {
           rows={4}
           placeholder="Enter complete address"
         />
-
       </Form.Group>
-
     </div>
   );
 }

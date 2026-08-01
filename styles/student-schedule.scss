@@ -286,7 +286,7 @@
 
 .schedule-top-row{
   display:grid;
-  grid-template-columns:1fr 220px;
+  grid-template-columns:310px 250px;
   gap:20px;
   align-items:start;
 }
@@ -296,6 +296,8 @@
   flex-direction:column;
   gap:24px;
 }
+
+
 
 /* ===========================
    Schedule Upcoming
@@ -405,44 +407,72 @@
     cursor:pointer;
 }
 
-@media(max-width:991px){
+@media (max-width:991px) {
 
-.schedule-upcoming__item{
-    grid-template-columns:5px 1fr;
-}
+  .student-schedule {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+  }
 
-.schedule-upcoming__meta{
-    margin-top:12px;
-    flex-direction:column;
-    gap:8px;
-}
+  .student-schedule__right {
+    order: -1;
+  }
 
-.arrow-btn{
-    display:none;
-}
+  .schedule-top-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-}
+  .student-calendar-wrap,
+  .monthly-progress-card {
+    width: 100%;
+    max-width: 100%;
+  }
 
-
-  @media (max-width: 1200px) {
+  .student-course-stats-row {
     grid-template-columns: 1fr;
   }
 
-  @media (max-width: 768px) {
-    padding: 20px;
-
-    .student-course-stats-row {
-      grid-template-columns: 1fr;
-    }
-
-    .progress-circle {
-      width: 140px;
-      height: 140px;
-    }
-
-    .progress-inner {
-      width: 110px;
-      height: 110px;
-    }
+  .schedule-upcoming__item {
+    grid-template-columns: 5px 1fr;
+    row-gap: 12px;
   }
+
+  .schedule-upcoming__meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .arrow-btn {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+  grid-template-columns: 1fr;
+}
+
+@media (max-width: 768px) {
+  padding: 20px;
+
+  .student-course-stats-row {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-circle {
+    width: 140px;
+    height: 140px;
+  }
+
+  .progress-inner {
+    width: 110px;
+    height: 110px;
+  }
+}
 }
