@@ -1,0 +1,646 @@
+@import './theme.scss';
+
+/* =========================================
+   Instructor Courses Page
+========================================= */
+
+.instructor-courses-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+/* ---- Top row: 3 stat cards + Popular Class ---- */
+.courses-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.course-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  min-width: 0;
+}
+
+/* Course Stat Card */
+.course-stat-card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  color: #fff;
+  height: 130px;
+  min-height: 130px;
+
+  &.green { background: $accent-green; }
+  &.yellow { background: #fdba12; }
+  &.red { background: $accent-coral; }
+
+  .card-body {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 22px;
+    gap: 10px;
+  }
+}
+
+.course-stat-left {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  min-width: 0;
+  flex: 1;
+}
+
+.course-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  i {
+    font-size: 22px;
+    color: #fff;
+  }
+}
+
+.course-info {
+  min-width: 0;
+  flex: 1;
+
+  h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.15;
+    white-space: nowrap;
+  }
+
+  p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.92);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.course-chart {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #fff;
+  border-right-color: rgba(255, 255, 255, 0.6);
+  flex-shrink: 0;
+}
+
+/* ---- Bottom row ---- */
+.courses-bottom {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  gap: 24px;
+  align-items: start;
+}
+
+.courses-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+
+/* ---- Popular Class ---- */
+.popular-class-card {
+  border-radius: 20px;
+  height: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  background: $surface;
+
+  .card-body {
+    padding: 22px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+.popular-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+
+  h5 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: $text-primary;
+  }
+}
+
+.more-btn {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  color: $text-muted;
+  padding: 0;
+  line-height: 1;
+}
+
+.popular-chart {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0 22px;
+}
+
+.donut-chart {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #fdba12 0 27%,
+    #ff6b57 27% 77%,
+    $accent-green 77% 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.donut-center {
+  width: 80px;
+  height: 80px;
+  background: $surface;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: 22px;
+    font-weight: 700;
+    color: $text-primary;
+    line-height: 1;
+  }
+}
+
+.popular-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: auto;
+}
+
+.popular-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+
+  strong {
+    font-size: 15px;
+    font-weight: 700;
+    color: $text-primary;
+    white-space: nowrap;
+  }
+}
+
+.popular-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+
+  span {
+    font-size: 14px;
+    color: $text-muted;
+    white-space: nowrap;
+  }
+}
+
+.color-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+/* ---- Selling Activity ---- */
+.selling-card {
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  background: $surface;
+
+  .card-body {
+    padding: 22px 24px 18px;
+  }
+}
+
+.selling-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 22px;
+
+  h5 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: $text-primary;
+    white-space: nowrap;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+.selling-legend {
+  display: flex;
+  gap: 18px;
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: $text-muted;
+    white-space: nowrap;
+  }
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+
+  &--green { background: $accent-green; }
+  &--yellow { background: #fdba12; }
+}
+
+.selling-tabs {
+  display: flex;
+  gap: 18px;
+  border-bottom: none;
+}
+
+.selling-tab {
+  border: none;
+  background: transparent;
+  padding: 0 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $text-muted;
+  position: relative;
+  cursor: pointer;
+
+  &.active {
+    color: $text-primary;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+      background: $accent-green;
+      border-radius: 2px;
+    }
+  }
+}
+
+.selling-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.selling-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.week {
+  width: 28px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $text-primary;
+  flex-shrink: 0;
+}
+
+.selling-bars {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.selling-bar {
+  height: 8px;
+  border-radius: 10px;
+  min-width: 4px;
+
+  &--green { background: $accent-green; }
+  &--yellow { background: #fdba12; }
+}
+
+.selling-axis {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+  padding-left: 42px;
+
+  span {
+    font-size: 12px;
+    color: $text-muted;
+    font-weight: 500;
+  }
+}
+
+/* ---- User Reviews ---- */
+.user-review-section {
+  h5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 18px;
+  }
+}
+
+.user-review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.review-card {
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  background: $surface;
+  border: 1px solid rgba($border-light, 0.4);
+
+  .card-body {
+    padding: 20px;
+  }
+}
+
+.review-avatar {
+  width: 48px;
+  height: 48px;
+  background: #e8eaed;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b0b8c4;
+  font-size: 22px;
+}
+
+.review-card h6 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: $text-primary;
+}
+
+.review-stars {
+  color: #fdba12;
+  margin: 0 0 12px;
+  font-size: 13px;
+  display: flex;
+  gap: 3px;
+}
+
+.review-card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: $text-muted;
+}
+
+/* ---- Top Courses ---- */
+.top-course-card {
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  background: $surface;
+
+  .card-body {
+    padding: 22px 20px;
+  }
+
+  h5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 22px;
+  }
+}
+
+.top-course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 18px;
+
+    &--green {
+      background: rgba($accent-green, 0.14);
+      color: $accent-green;
+    }
+
+    &--yellow {
+      background: rgba(#fdba12, 0.18);
+      color: #e5a610;
+    }
+  }
+
+  strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: $text-primary;
+    margin-bottom: 3px;
+  }
+
+  small {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: $text-muted;
+  }
+}
+
+.mini-bars {
+  display: flex;
+  gap: 4px;
+  align-items: flex-end;
+  flex-shrink: 0;
+
+  span {
+    width: 6px;
+    background: $accent-green;
+    border-radius: 10px;
+  }
+
+  span:nth-child(1) { height: 18px; }
+  span:nth-child(2) { height: 28px; }
+  span:nth-child(3) { height: 22px; }
+}
+
+.top-course-horizontal-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-shrink: 0;
+  width: 52px;
+
+  span {
+    display: block;
+    height: 5px;
+    border-radius: 10px;
+  }
+
+  .bar-yellow {
+    width: 100%;
+    background: #fdba12;
+  }
+
+  .bar-green {
+    width: 75%;
+    background: $accent-green;
+  }
+
+  .bar-red {
+    width: 50%;
+    background: $accent-coral;
+  }
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1400px) {
+  .courses-top,
+  .courses-bottom {
+    grid-template-columns: minmax(0, 1fr) 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .courses-top,
+  .courses-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .course-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .user-review-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 992px) {
+  .course-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .user-review-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .selling-header {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__right {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .course-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .course-stat-card {
+    height: auto;
+    min-height: 120px;
+  }
+
+  .user-review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .selling-axis {
+    padding-left: 38px;
+  }
+}
+
+@media (max-width: 576px) {
+  .course-info h3 {
+    font-size: 20px;
+  }
+
+  .selling-header__right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

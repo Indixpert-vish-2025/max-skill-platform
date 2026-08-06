@@ -1,0 +1,89 @@
+{
+  "stats": [
+    {
+      "id": 1,
+      "title": "Total Earnings",
+      "value": "$45,741",
+      "delta": "+15% than last month",
+      "variant": "earnings",
+      "chart": [20, 45, 70, 50, 30, 55, 65, 40, 52]
+    },
+    {
+      "id": 2,
+      "title": "Pending",
+      "value": "$3,280",
+      "delta": "3 transactions",
+      "variant": "courses",
+      "chart": [20, 35, 18, 40, 22, 32, 10, 5, 25]
+    },
+    {
+      "id": 3,
+      "title": "Withdrawn",
+      "value": "$42,461",
+      "delta": "+8% than last month",
+      "variant": "students",
+      "chart": [80, 60, 45, 70, 40, 75]
+    }
+  ],
+  "filters": ["All", "Completed", "Pending", "Failed"],
+  "transactions": [
+    {
+      "id": 1,
+      "date": "Jan 5, 2022",
+      "description": "UI Design Beginner - Course Sale",
+      "student": "Karen Hope",
+      "amount": "$49.99",
+      "status": "Completed",
+      "type": "credit"
+    },
+    {
+      "id": 2,
+      "date": "Jan 4, 2022",
+      "description": "UX Research - Course Sale",
+      "student": "Johnny Ahmad",
+      "amount": "$59.99",
+      "status": "Completed",
+      "type": "credit"
+    },
+    {
+      "id": 3,
+      "date": "Jan 4, 2022",
+      "description": "Withdrawal to Bank Account",
+      "student": "-",
+      "amount": "-$2,500.00",
+      "status": "Completed",
+      "type": "debit"
+    },
+    {
+      "id": 4,
+      "date": "Jan 3, 2022",
+      "description": "Fullstack Developer - Course Sale",
+      "student": "Jordan Nico",
+      "amount": "$79.99",
+      "status": "Pending",
+      "type": "credit"
+    },
+    {
+      "id": 5,
+      "date": "Jan 2, 2022",
+      "description": "Graphic Design - Course Sale",
+      "student": "Cathryn Heller",
+      "amount": "$39.99",
+      "status": "Completed",
+      "type": "credit"
+    },
+    {
+      "id": 6,
+      "date": "Jan 1, 2022",
+      "description": "Web Design - Course Sale",
+      "student": "Alex Morgan",
+      "amount": "$54.99",
+      "status": "Failed",
+      "type": "credit"
+    }
+  ],
+  "chart": {
+    "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "values": [3200, 4100, 3800, 5200, 4800, 6100, 5500, 7200, 6800, 5900, 6400, 7100]
+  }
+}

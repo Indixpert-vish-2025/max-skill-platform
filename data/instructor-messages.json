@@ -1,0 +1,84 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Karen Hope",
+      "avatar": "/assets/instructors/instructor2.jpg",
+      "lastMessage": "Thank you for the feedback!",
+      "time": "2m ago",
+      "unread": 2,
+      "online": true
+    },
+    {
+      "id": 2,
+      "name": "Johnny Ahmad",
+      "avatar": "/assets/instructors/instructor3.jpg",
+      "lastMessage": "Can you explain the assignment?",
+      "time": "15m ago",
+      "unread": 0,
+      "online": true
+    },
+    {
+      "id": 3,
+      "name": "Jordan Nico",
+      "avatar": "/assets/instructors/instructor4.jpg",
+      "lastMessage": "I completed the project",
+      "time": "1h ago",
+      "unread": 1,
+      "online": false
+    },
+    {
+      "id": 4,
+      "name": "Cathryn Heller",
+      "avatar": "/assets/instructors/instructor5.jpg",
+      "lastMessage": "When is the next class?",
+      "time": "3h ago",
+      "unread": 0,
+      "online": false
+    },
+    {
+      "id": 5,
+      "name": "Alex Morgan",
+      "avatar": "/assets/instructors/instructor6.jpg",
+      "lastMessage": "Thanks for the help!",
+      "time": "Yesterday",
+      "unread": 0,
+      "online": false
+    }
+  ],
+  "activeChat": {
+    "contactId": 1,
+    "messages": [
+      {
+        "id": 1,
+        "sender": "student",
+        "text": "Hi, I have a question about the wireframe assignment.",
+        "time": "08:30 AM"
+      },
+      {
+        "id": 2,
+        "sender": "instructor",
+        "text": "Hello Karen! Sure, what would you like to know?",
+        "time": "08:32 AM"
+      },
+      {
+        "id": 3,
+        "sender": "student",
+        "text": "Should I include the mobile version in the wireframe?",
+        "time": "08:35 AM"
+      },
+      {
+        "id": 4,
+        "sender": "instructor",
+        "text": "Yes, please include both desktop and mobile versions. Focus on the main user flow first.",
+        "time": "08:38 AM"
+      },
+      {
+        "id": 5,
+        "sender": "student",
+        "text": "Thank you for the feedback!",
+        "time": "08:40 AM"
+      }
+    ]
+  }
+}

@@ -36,6 +36,8 @@ export default function Header({ toggleSidebar }) {
     "/resource": "Resource",
     "/transaction": "Transaction",
     "/live-class": "Live Class",
+    "/messages": "Messages",
+    "/profile": "Profile",
 
     "/student/dashboard": "Dashboard",
     "/student/courses": "Courses",
@@ -148,7 +150,7 @@ const handleSearch = (e) => {
 
             <Dropdown.Item
               as={Link}
-              href="/student/profile"
+              href={user?.role === "instructor" ? "/profile" : "/student/profile"}
             >
               <i className="bi bi-person me-2"></i>
               My Profile

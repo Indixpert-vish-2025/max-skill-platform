@@ -1,0 +1,91 @@
+{
+  "stats": [
+    {
+      "id": 1,
+      "title": "Total Students",
+      "value": "12,345",
+      "delta": "+5.4% than last year",
+      "variant": "students",
+      "chart": [80, 60, 45, 70, 40, 75]
+    },
+    {
+      "id": 2,
+      "title": "Courses",
+      "value": "100",
+      "delta": "+15% than last year",
+      "variant": "courses",
+      "chart": [20, 35, 18, 40, 22, 32, 10, 5, 25]
+    },
+    {
+      "id": 3,
+      "title": "Earnings",
+      "value": "$45,741",
+      "delta": "+15%",
+      "variant": "earnings",
+      "chart": [20, 45, 70, 50, 30, 55, 65, 40, 52]
+    }
+  ],
+  "activity": {
+    "months": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "lastMonth": [35, 30, 28, 24, 18, 30, 22, 32, 20, 18, 25, 30],
+    "thisMonth": [72, 60, 50, 63, 40, 50, 62, 48, 64, 42, 50, 63],
+    "tooltip": {
+      "month": "May",
+      "value": "14,988"
+    }
+  },
+  "schedule": {
+    "title": "Upcoming Events",
+    "date": "5 Jan",
+    "items": [
+      {
+        "time": "08:00 AM",
+        "category": "UI Design",
+        "title": "Introduction Wireframe"
+      },
+      {
+        "time": "10:00 AM",
+        "category": "Graphic Design",
+        "title": "Golden Ratio"
+      },
+      {
+        "time": "01:00 PM",
+        "category": "Web Design",
+        "title": "Basic HTML"
+      },
+      {
+        "time": "08:00 AM",
+        "category": "UI Design",
+        "title": "Prototyping"
+      },
+      {
+        "time": "11:00 AM",
+        "category": "Graphic Design",
+        "title": "Photo Manipulation"
+      },
+      {
+        "time": "02:00 PM",
+        "category": "UI Design",
+        "title": "Interaction Design"
+      },
+      {
+        "time": "04:00 PM",
+        "category": "Programming",
+        "title": "Basic React.js"
+      }
+    ]
+  }
+}

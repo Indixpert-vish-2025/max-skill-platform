@@ -1,0 +1,59 @@
+{
+  "stats": [
+    { "id": 1, "title": "Live Now", "value": "2", "icon": "bi-broadcast", "color": "green" },
+    { "id": 2, "title": "Upcoming", "value": "5", "icon": "bi-calendar-event", "color": "yellow" },
+    { "id": 3, "title": "Completed", "value": "48", "icon": "bi-check-circle", "color": "red" }
+  ],
+  "liveNow": [
+    {
+      "id": 1,
+      "title": "UI Design Basic",
+      "topic": "Introduction Wireframe",
+      "time": "08:00 - 10:00 AM",
+      "students": 24,
+      "status": "live",
+      "image": "/assets/ui-design.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Graphic Design",
+      "topic": "Golden Ratio",
+      "time": "10:00 - 12:00 PM",
+      "students": 18,
+      "status": "live",
+      "image": "/assets/web-design.jpg"
+    }
+  ],
+  "upcoming": [
+    {
+      "id": 3,
+      "title": "Web Design",
+      "topic": "Basic HTML",
+      "date": "Jan 5, 2022",
+      "time": "01:00 - 03:00 PM",
+      "students": 32,
+      "status": "upcoming",
+      "image": "/assets/fullstack.jpg"
+    },
+    {
+      "id": 4,
+      "title": "UX Research",
+      "topic": "User Interview",
+      "date": "Jan 6, 2022",
+      "time": "09:00 - 11:00 AM",
+      "students": 28,
+      "status": "upcoming",
+      "image": "/assets/freelancer.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Programming",
+      "topic": "Basic React.js",
+      "date": "Jan 7, 2022",
+      "time": "04:00 - 06:00 PM",
+      "students": 45,
+      "status": "upcoming",
+      "image": "/assets/fullstack.jpg"
+    }
+  ]
+}

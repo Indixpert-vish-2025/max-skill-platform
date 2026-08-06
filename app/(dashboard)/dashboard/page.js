@@ -1,96 +1,62 @@
-// import React from 'react';
-// import StatCard from '../../../components/ui/StatCard';
-// import CalendarCard from '../../../components/ui/CalendarCard';
-// import UpcomingEventsCard from '../../../components/ui/UpcomingEventsCard';
-// import ActivityCard from '../../../components/ui/ActivityCard';
-// import dashboardData from '../../../data/dashboard.json';
+import instructorData from "../../../data/instructor-dashboard.json";
 
-// export default function DashboardPage() {
-//   const { stats, upcomingEvents } = dashboardData;
-
-//   return (
-//     <div className="dashboard-grid">
-//       <div className="dashboard-grid-main">
-//         <div className="stats-row">
-//           {stats.map((stat) => (
-//             <StatCard
-//               key={stat.id}
-//               title={stat.title}
-//               value={stat.value}
-//               delta={stat.delta}
-//               variant={stat.variant}
-//             />
-//           ))}
-//         </div>
-
-//         <ActivityCard title="Working Activity" activeMonth="Jul" />
-//       </div>
-
-//       <aside className="events-panel">
-//         <CalendarCard month="January" year={2022} activeDay={5} markedDay={7} />
-//         <hr className="calendar-divider" />
-//         <UpcomingEventsCard events={upcomingEvents} title="Upcoming Events" />
-//       </aside>
-//     </div>
-//   );
-// }
-
-
-
-
-import React from "react";
-import StatCard from "../../../components/ui/StatCard";
+import StatCard from "../../../components/ui/student/instructors/StatCard";
+import WorkingActivity from "../../../components/ui/student/instructors/WorkingActivity";
 import CalendarCard from "../../../components/ui/CalendarCard";
-import UpcomingEventsCard from "../../../components/ui/UpcomingEventsCard";
-import ActivityCard from "../../../components/ui/ActivityCard";
-import dashboardData from "../../../data/dashboard.json";
+import UpcomingEventsList from "../../../components/ui/student/instructors/schedule/UpcomingEventsList";
 
-export default function DashboardPage() {
+export default function InstructorDashboardPage() {
   const {
     stats,
     activity,
-    calendar,
-    upcomingEvents,
-  } = dashboardData;
+    schedule,
+  } = instructorData;
 
   return (
-    <div className="dashboard-grid">
-      <div className="dashboard-grid-main">
-        <div className="stats-row">
-          {stats.map((stat) => (
-            <StatCard
-              key={stat.id}
-              title={stat.title}
-              value={stat.value}
-              delta={stat.delta}
-              variant={stat.variant}
-              chart={stat.chart}
-            />
-          ))}
+    <div className="instructor-dashboard">
+
+      <div className="instructor-dashboard__left">
+
+        <div className="dashboard-stats">
+
+         {stats.map((item) => (
+  <StatCard
+    key={item.id}
+    title={item.title}
+    value={item.value}
+    delta={item.delta}
+    variant={item.variant}
+    chart={item.chart}
+  />
+))}
+
         </div>
 
-        <ActivityCard
-          title={activity.title}
-          bars={activity.bars}
-          activeMonth={activity.activeMonth}
-        />
+        <WorkingActivity
+data={activity}
+/>
+
       </div>
 
-      <aside className="events-panel">
-        <CalendarCard
-          month={calendar.month}
-          year={calendar.year}
-          activeDay={calendar.activeDay}
-          markedDay={calendar.markedDay}
+      <div className="instructor-dashboard__right">
+
+        <div className="student-calendar-wrap">
+          <CalendarCard
+            month="January"
+            year={2022}
+            activeDay={5}
+            markedDay={5}
+          />
+        </div>
+
+        <UpcomingEventsList
+          title={schedule.title}
+          date={schedule.date}
+          items={schedule.items}
         />
 
-        <hr className="calendar-divider" />
+      </div>
 
-        <UpcomingEventsCard
-          events={upcomingEvents}
-          title="Upcoming Events"
-        />
-      </aside>
     </div>
   );
-}
+}     

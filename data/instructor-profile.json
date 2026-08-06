@@ -1,0 +1,57 @@
+{
+  "name": "Samantha William",
+  "designation": "Senior UI/UX Designer",
+  "memberSince": "Member Since 2018",
+  "image": "/assets/instructors/instructor1.jpg",
+  "email": "samantha@maxskills.com",
+  "phone": "+91 9876543210",
+  "location": "Jakarta, Indonesia",
+  "bio": "Passionate UI/UX mentor with 8+ years of teaching experience. Specialized in Figma, UX Research and Design Systems.",
+  "stats": {
+    "students": "12.5k",
+    "courses": 18,
+    "rating": 4.9,
+    "reviews": "2.4k",
+    "earnings": "$45,741",
+    "experience": "8 Years"
+  },
+  "skills": ["UI Design", "UX Research", "Figma", "Prototyping", "Design Systems"],
+  "achievements": [
+    "/assets/icons/trophy.svg",
+    "/assets/icons/puzzle.svg",
+    "/assets/icons/rocket.svg",
+    "/assets/icons/brain.svg",
+    "/assets/icons/coffee.svg"
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "UI Design Beginner",
+      "students": "5.2k",
+      "rating": 4.8,
+      "progress": 92,
+      "color": "#4cbc9a"
+    },
+    {
+      "id": 2,
+      "title": "UX Research",
+      "students": "4.1k",
+      "rating": 4.9,
+      "progress": 88,
+      "color": "#FDBA12"
+    },
+    {
+      "id": 3,
+      "title": "Design System",
+      "students": "2.7k",
+      "rating": 4.7,
+      "progress": 76,
+      "color": "#FF6B57"
+    }
+  ],
+  "schedule": [
+    { "day": "Monday", "time": "10:00 AM - 12:00 PM", "course": "UI Design" },
+    { "day": "Wednesday", "time": "02:00 PM - 04:00 PM", "course": "UX Research" },
+    { "day": "Friday", "time": "06:00 PM - 08:00 PM", "course": "Design System" }
+  ]
+}

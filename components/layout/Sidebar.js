@@ -85,6 +85,8 @@ const instructorNavItems = [
   { href: "/resource", label: "Resource", icon: "bi-folder2-open" },
   { href: "/transaction", label: "Transaction", icon: "bi-arrow-left-right" },
   { href: "/live-class", label: "Live Class", icon: "bi-camera-video" },
+  { href: "/messages", label: "Messages", icon: "bi-chat-dots" },
+  { href: "/profile", label: "Profile", icon: "bi-person" },
 ];
 
 const studentNavItems = [

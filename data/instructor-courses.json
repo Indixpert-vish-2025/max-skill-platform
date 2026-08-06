@@ -1,0 +1,96 @@
+{
+  "stats": [
+    {
+      "id": 1,
+      "title": "Total Courses",
+      "value": "23,940",
+      "icon": "bi bi-book-fill",
+      "color": "green"
+    },
+    {
+      "id": 2,
+      "title": "Courses Content",
+      "value": "32,867",
+      "icon": "bi bi-file-earmark-text-fill",
+      "color": "yellow"
+    },
+    {
+      "id": 3,
+      "title": "Review",
+      "value": "94,230",
+      "icon": "bi bi-hand-thumbs-up-fill",
+      "color": "red"
+    }
+  ],
+
+  "popularClass": {
+    "centerPercent": 27,
+    "items": [
+      {
+        "label": "Design",
+        "value": 27,
+        "count": 763,
+        "color": "#FDBA12"
+      },
+      {
+        "label": "Programming",
+        "value": 50,
+        "count": 321,
+        "color": "#FF6B57"
+      },
+      {
+        "label": "Science",
+        "value": 23,
+        "count": 69,
+        "color": "#4BC59A"
+      }
+    ]
+  },
+
+  "sellingActivity": {
+    "weeks": ["W1", "W2", "W3", "W4"],
+    "thisWeek": [140, 60, 75, 165],
+    "lastWeek": [150, 110, 90, 190],
+    "maxScale": 275
+  },
+
+  "userReviews": [
+    {
+      "id": 1,
+      "name": "Karen Hope",
+      "rating": 5,
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 2,
+      "name": "Johnny Ahmad",
+      "rating": 5,
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "id": 3,
+      "name": "Jordan Nico",
+      "rating": 5,
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ],
+
+  "topCourses": [
+    {
+      "id": 1,
+      "title": "UI Design",
+      "value": "12,345",
+      "icon": "bi bi-book-fill",
+      "iconColor": "green",
+      "chartType": "vertical"
+    },
+    {
+      "id": 2,
+      "title": "Programming",
+      "value": "13,345",
+      "icon": "bi bi-book-fill",
+      "iconColor": "yellow",
+      "chartType": "horizontal"
+    }
+  ]
+}

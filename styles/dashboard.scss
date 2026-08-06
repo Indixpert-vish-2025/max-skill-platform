@@ -891,3 +891,331 @@ padding:20px;
 }
 
 }
+
+
+
+
+
+
+/* ===========================
+   Instructor Dashboard
+=========================== */
+
+.instructor-dashboard {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 380px);
+  gap: 24px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.instructor-dashboard__left,
+.instructor-dashboard__right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+
+/* ==========================
+   Working Activity
+========================== */
+
+.working-card {
+  background: $surface;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.working-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.working-header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: $text-primary;
+  margin: 0;
+}
+
+.working-filter {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: $text-muted;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.legend i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.legend.yellow i {
+  background: #fdba12;
+}
+
+.legend.green i {
+  background: $accent-green;
+}
+
+.year-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: $text-muted;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.working-more-btn {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  color: $text-muted;
+  padding: 0;
+  line-height: 1;
+}
+
+.working-chart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 4px;
+  height: 280px;
+  padding-top: 8px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.month-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 36px;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 6px;
+  height: 220px;
+  width: 100%;
+}
+
+.yellow-bar {
+  width: 7px;
+  max-height: 100%;
+  background: #fdba12;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.green-bar {
+  width: 7px;
+  max-height: 100%;
+  background: $accent-green;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.month-column p {
+  margin-top: 12px;
+  margin-bottom: 0;
+  color: $text-muted;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+
+
+
+/*========================
+ Instructor Stat Card
+========================*/
+
+.ins-stat-card {
+  background: $surface;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+  position: relative;
+}
+
+.ins-card-header {
+  flex: 1;
+  min-height: 0;
+}
+
+.ins-card-header p {
+  font-size: 14px;
+  font-weight: 600;
+  color: $text-muted;
+  margin-bottom: 6px;
+}
+
+.ins-card-header h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: $text-primary;
+  margin-bottom: 2px;
+  line-height: 1.1;
+}
+
+.ins-card-header span {
+  font-size: 12px;
+  color: $accent-green;
+  font-weight: 600;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ins-card-chart {
+  height: 44px;
+  min-height: 44px;
+  max-height: 44px;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.mini-bar-chart {
+  height: 44px;
+  max-height: 44px;
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.mini-bar-chart span {
+  width: 7px;
+  max-height: 44px;
+  border-radius: 30px;
+  background: $accent-green;
+  flex-shrink: 0;
+}
+
+.mini-bar-chart span.active {
+  background: #fdba12;
+}
+
+.mini-line-chart {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+.mini-line-chart path {
+  fill: none;
+  stroke: #fdba12;
+  stroke-width: 2.5;
+}
+
+.earnings-chart {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+.earnings-chart path {
+  fill: none;
+  stroke: $accent-green;
+  stroke-width: 2.5;
+}
+
+.earnings-chart circle {
+  fill: $accent-green;
+}
+
+.instructor-dashboard__right {
+  .student-calendar-wrap {
+    .calendar-card {
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+      background: $surface;
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .calendar-header h5 {
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .dashboard-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .instructor-dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .working-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    padding: 20px;
+  }
+
+  .ins-card-header h2 {
+    font-size: 24px;
+  }
+}

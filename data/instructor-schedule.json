@@ -1,0 +1,84 @@
+{
+  "ongoingClasses": [
+    {
+      "id": 1,
+      "label": "UI Design Basic",
+      "value": "12",
+      "variant": "success",
+      "icon": "palette"
+    },
+    {
+      "id": 2,
+      "label": "Fullstack Developer",
+      "value": "8",
+      "variant": "warning",
+      "icon": "code"
+    }
+  ],
+  "calendar": {
+    "month": "January",
+    "year": 2022,
+    "activeDay": 5,
+    "markedDay": 11
+  },
+  "progress": {
+    "value": 15,
+    "title": "+15%",
+    "description": "Classes this Month"
+  },
+  "schedule": {
+    "title": "Upcoming Schedule",
+    "date": "January 5, 2022",
+    "items": [
+      {
+        "time": "08:00 AM",
+        "category": "UI Design",
+        "title": "Introduction Wireframe"
+      },
+      {
+        "time": "10:00 AM",
+        "category": "Graphic Design",
+        "title": "Golden Ratio"
+      },
+      {
+        "time": "01:00 PM",
+        "category": "Web Design",
+        "title": "Basic HTML"
+      },
+      {
+        "time": "02:00 PM",
+        "category": "UI Design",
+        "title": "Interaction Design"
+      }
+    ]
+  },
+  "todayTimeline": [
+    {
+      "id": 1,
+      "startHour": 8,
+      "duration": 2,
+      "title": "UI Design",
+      "subtitle": "Introduction Wireframe",
+      "time": "08:00 - 10:00 AM",
+      "accent": "green"
+    },
+    {
+      "id": 2,
+      "startHour": 10,
+      "duration": 2,
+      "title": "Graphic Design",
+      "subtitle": "Golden Ratio",
+      "time": "10:00 - 12:00 PM",
+      "accent": "yellow"
+    },
+    {
+      "id": 3,
+      "startHour": 13,
+      "duration": 2,
+      "title": "Web Design",
+      "subtitle": "Basic HTML",
+      "time": "01:00 - 03:00 PM",
+      "accent": "red"
+    }
+  ]
+}
