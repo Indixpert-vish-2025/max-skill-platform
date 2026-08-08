@@ -11,7 +11,7 @@
       "id": 2,
       "title": "Courses Content",
       "value": "32,867",
-      "icon": "bi bi-file-earmark-text-fill",
+      "icon": "bi bi-clipboard-data-fill",
       "color": "yellow"
     },
     {
@@ -24,7 +24,6 @@
   ],
 
   "popularClass": {
-    "centerPercent": 27,
     "items": [
       {
         "label": "Design",

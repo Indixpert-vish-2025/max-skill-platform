@@ -1,26 +1,46 @@
 "use client";
 
 import { Card } from "react-bootstrap";
+import { useAuth } from "../../../../../hooks/useAuth";
+
+const DEFAULT_AVATAR = "/assets/avatar-placeholder.svg";
 
 export default function InstructorProfilePanel({ profile }) {
+  const { user } = useAuth();
+
+  const displayName = user?.name || "Instructor";
+  const displayEmail = user?.email || "";
+  const displayAvatar = user?.avatar || DEFAULT_AVATAR;
+  const displayRole = user?.role
+    ? `${user.role.charAt(0).toUpperCase()}${user.role.slice(1)}`
+    : "";
+
   return (
     <div className="instructor-profile-page">
       <div className="instructor-profile-left">
         <Card className="instructor-profile-card border-0 shadow-sm">
           <Card.Body>
             <div className="instructor-profile-avatar-wrap">
-              <img src={profile.image} alt={profile.name} className="instructor-profile-avatar" />
+              <img
+                src={displayAvatar}
+                alt={displayName}
+                className="instructor-profile-avatar"
+              />
             </div>
 
-            <h4>{profile.name}</h4>
+            <h4>{displayName}</h4>
             <p className="instructor-profile-designation">{profile.designation}</p>
-            <span className="instructor-profile-since">{profile.memberSince}</span>
+            {displayRole && (
+              <span className="instructor-profile-since">{displayRole} Account</span>
+            )}
 
             <div className="instructor-profile-contact">
-              <div>
-                <i className="bi bi-envelope" />
-                <span>{profile.email}</span>
-              </div>
+              {displayEmail && (
+                <div>
+                  <i className="bi bi-envelope" />
+                  <span>{displayEmail}</span>
+                </div>
+              )}
               <div>
                 <i className="bi bi-telephone" />
                 <span>{profile.phone}</span>

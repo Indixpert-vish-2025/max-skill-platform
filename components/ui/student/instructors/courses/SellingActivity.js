@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Card } from "react-bootstrap";
 
-const AXIS_TICKS = [0, 55, 110, 165, 220, 275];
+const AXIS_TICKS = [0, 25, 50, 75, 100, 125, 150, 175, 200, 250, 275];
 
 export default function SellingActivity({ data }) {
   const [activeTab, setActiveTab] = useState("selling");
