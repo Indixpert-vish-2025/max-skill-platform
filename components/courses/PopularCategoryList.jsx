@@ -35,10 +35,12 @@ export default function PopularCategoryList({
   const active = isControlled ? controlledActive : internalActive;
 
   const handleCategorySelect = (title) => {
+    const nextCategory = active === title ? null : title;
+
     if (isControlled) {
-      onCategoryChange?.(title);
+      onCategoryChange?.(nextCategory);
     } else {
-      setInternalActive(title);
+      setInternalActive(nextCategory);
     }
   };
 
