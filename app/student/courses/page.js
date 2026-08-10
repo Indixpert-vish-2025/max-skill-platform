@@ -12,22 +12,35 @@ export default function StudentCoursesPage() {
   const COURSES_PER_PAGE = 6;
 
   const [currentPage, setCurrentPage] = useState(1);
+  const [activeCategory, setActiveCategory] = useState(null);
+
+  const filteredCourses = activeCategory
+    ? courses.filter((course) => course.category === activeCategory)
+    : courses;
 
   const totalPages = Math.ceil(
-    courses.length / COURSES_PER_PAGE
+    filteredCourses.length / COURSES_PER_PAGE
   );
 
   const startIndex =
     (currentPage - 1) * COURSES_PER_PAGE;
 
-  const currentCourses = courses.slice(
+  const currentCourses = filteredCourses.slice(
     startIndex,
     startIndex + COURSES_PER_PAGE
   );
 
+  const handleCategoryChange = (category) => {
+    setActiveCategory(category);
+    setCurrentPage(1);
+  };
+
   return (
     <div className="student-courses-page">
-      <PopularCategoryList />
+      <PopularCategoryList
+        activeCategory={activeCategory}
+        onCategoryChange={handleCategoryChange}
+      />
 
       <CourseGrid courses={currentCourses} />
 

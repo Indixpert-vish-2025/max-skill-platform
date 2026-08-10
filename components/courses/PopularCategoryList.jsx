@@ -26,15 +26,40 @@ const categories = [
   },
 ];
 
-export default function PopularCategoryList() {
-  const [active, setActive] = useState("Graphic Design");
+export default function PopularCategoryList({
+  activeCategory: controlledActive,
+  onCategoryChange,
+}) {
+  const [internalActive, setInternalActive] = useState(null);
+  const isControlled = controlledActive !== undefined;
+  const active = isControlled ? controlledActive : internalActive;
+
+  const handleCategorySelect = (title) => {
+    if (isControlled) {
+      onCategoryChange?.(title);
+    } else {
+      setInternalActive(title);
+    }
+  };
+
+  const handleViewAll = () => {
+    if (isControlled) {
+      onCategoryChange?.(null);
+    } else {
+      setInternalActive(null);
+    }
+  };
 
   return (
     <div className="popular-category-section mb-5">
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h4 className="section-title">Popular This Week</h4>
 
-        <button className="btn btn-link text-decoration-none view-all-btn">
+        <button
+          type="button"
+          className="btn btn-link text-decoration-none view-all-btn"
+          onClick={handleViewAll}
+        >
           View All
           <i className="bi bi-chevron-right ms-1"></i>
         </button>
@@ -48,7 +73,7 @@ export default function PopularCategoryList() {
             image={item.image}
             subtitle={item.subtitle}
             active={active === item.title}
-            onClick={() => setActive(item.title)}
+            onClick={() => handleCategorySelect(item.title)}
           />
         ))}
       </div>

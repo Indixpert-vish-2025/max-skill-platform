@@ -41,7 +41,13 @@
     "lastMonth": [40, 55, 48, 62, 50, 58, 45, 52, 60, 48, 55, 42],
     "thisMonth": [52, 60, 55, 70, 65, 72, 58, 68, 75, 62, 70, 55],
     "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    "tooltip": { "month": "May", "value": "1.702" }
+    "tooltip": { "month": "May", "value": "1.702" },
+    "weekly": {
+      "lastWeek": [40, 48, 52, 50, 55, 48, 42],
+      "thisWeek": [52, 58, 55, 70, 65, 62, 58],
+      "days": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+      "tooltip": { "day": "Wed", "value": "70" }
+    }
   },
   "homework": [
     { "title": "Web Design", "progress": 8, "total": 10, "variant": "yellow" },

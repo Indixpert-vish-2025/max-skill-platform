@@ -219,6 +219,27 @@
   font-size: 0.875rem;
 }
 
+.student-year-select.dropdown-toggle::after {
+  display: none;
+}
+
+.student-score-activity {
+  .student-year-select {
+    color: $primary;
+  }
+
+  .dropdown-menu .dropdown-item {
+    color: $text-primary;
+  }
+
+  .dropdown-menu .dropdown-item.active,
+  .dropdown-menu .dropdown-item:hover,
+  .dropdown-menu .dropdown-item:focus,
+  .dropdown-menu .dropdown-item:active {
+    background-color: $primary !important;
+    color: $surface !important;
+  }
+}
 .student-learning-activity__chart,
 .student-score-activity__chart {
   width: 100%;

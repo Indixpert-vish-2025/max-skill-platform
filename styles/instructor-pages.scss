@@ -272,6 +272,34 @@
   justify-content: center;
 }
 
+.instructor-schedule-add-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) auto;
+  gap: 8px;
+  margin-bottom: 16px;
+
+  .form-control {
+    font-size: 13px;
+    border-color: rgba($border-light, 0.8);
+    color: $text-primary;
+
+    &::placeholder {
+      color: $text-muted;
+    }
+  }
+}
+
+.instructor-schedule-add-submit {
+  border: none;
+  border-radius: 10px;
+  background: $accent-green;
+  color: $surface;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 0 14px;
+  white-space: nowrap;
+}
+
 .instructor-schedule-events__list {
   display: flex;
   flex-direction: column;

@@ -63,6 +63,7 @@ export default function StudentDashboardPage() {
           lastMonth={scoreActivity.lastMonth}
           thisMonth={scoreActivity.thisMonth}
           tooltip={scoreActivity.tooltip}
+          weekly={scoreActivity.weekly}
         />
 
       </div>
